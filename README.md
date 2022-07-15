@@ -10,11 +10,13 @@ If you find our implementation useful or would like to use our code. Please cite
 
 This work was mostly done by D-Hank (daihankun19@mails.ucas.ac.cn). Also, some tasks were done by Bruce-Sun (sunbin19@mails.ucas.ac.cn) and zty (zhengtianyu@mails.ucas.ac.cn).
 
-## Dependency
+## Dependencies
 
 - ANTLR4
 
 - CMake
+
+- G++ -5 (for linking, g++-5 is recommended)
 
 ## Principle
 
@@ -24,7 +26,7 @@ Here's the workflow:
 -------------    -------    -------    ------    ------    -------    -------
 |source code| -> | AST | -> | AST | -> | IR | -> | IR | -> | ASM | -> | ASM | -> *.s
 -------------    -------    -------    ------    ------    -------    -------
-      lexical/syntax  semantic    IR-gen  optimaize   ASM-gen   optimize
+      lexical/syntax  semantic    IR-gen  optimize   ASM-gen   optimize
 ```
 
 Lexical analysis and syntax parsing are done by ANTLR.
